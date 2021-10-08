@@ -124,7 +124,7 @@ function compatibilidad() //solo tomará multiplos positivos de 10 y distintos d
     {
       entregarDinero();
       contar();
-      generarFactura();
+     
     } else if (dinero == 0)
     {
       sonidos.alerta.play();
@@ -172,7 +172,20 @@ function check() //VERIFICA SI LA SUMA ES VÁLIDA RESPECTO A LOS BILLETES DISPON
   {
     sonidos.entrega.play();
     carga.innerHTML += "<br /> Su Dinero: <br />";
+recibo.innerHTML += "<br /> Su Recibo: <br />";
 
+ recibo.innerHTML += "<img src=https://raw.githubusercontent.com/fgmuller/CajeritoGeoBank/master/recibocabeza.png>" ;
+
+
+       recibo.innerHTML += "<br /> Dinero Disponible: $" + total + "<br />" ;
+
+
+         var r =document.getElementById("pantalla_texto");
+       retiro = parseInt(r.value);
+
+       recibo.innerHTML += "<br /> Monto Retirado: $" + retiro + "<br />";
+     recibo.innerHTML += "<br /> Nuevo Saldo: $" + (total-retiro) + "<br />";
+recibo.innerHTML += "<img src=https://raw.githubusercontent.com/fgmuller/CajeritoGeoBank/master/recibopie.png>" ;
 
     for(e of entregado)
     {
@@ -200,22 +213,4 @@ function reset() {
 
 
 
-function generarFactura() {
 
- recibo.innerHTML += "<br /> Su Recibo: <br />";
-
- recibo.innerHTML += "<img src=https://raw.githubusercontent.com/fgmuller/CajeritoGeoBank/master/recibocabeza.png>" ;
-
-
-       recibo.innerHTML += "<br /> Dinero Disponible: $" + total + "<br />" ;
-
-
-         var r =document.getElementById("pantalla_texto");
-       retiro = parseInt(r.value);
-
-       recibo.innerHTML += "<br /> Monto Retirado: $" + retiro + "<br />";
-     recibo.innerHTML += "<br /> Nuevo Saldo: $" + (total-retiro) + "<br />";
-recibo.innerHTML += "<img src=https://raw.githubusercontent.com/fgmuller/CajeritoGeoBank/master/recibopie.png>" ;
-
-
-}
