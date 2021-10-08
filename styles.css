@@ -14,20 +14,17 @@ background-color: #D9D9D9;
 
 
 .footerp{
-  margin-left: 550px;
- margin-top:auto; 
+  margin-left: 100px;
+ margin-top:auto;
 position: relative;
 
-
+text-align: center;
 
 font-family: monospace;
 font-size: 20px;
 color: #2C3035;
-  
+
 }
-
-
-
 
 
 body
