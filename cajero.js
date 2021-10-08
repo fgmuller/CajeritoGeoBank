@@ -204,7 +204,7 @@ function generarFactura() {
 
  recibo.innerHTML += "<br /> Su Recibo: <br />";
 
- recibo.innerHTML += "<img src=reciboCabeza.png>" ;
+ recibo.innerHTML += "<img src=https://raw.githubusercontent.com/fgmuller/CajeritoGeoBank/master/recibocabeza.png>" ;
 
 
        recibo.innerHTML += "<br /> Dinero Disponible: $" + total + "<br />" ;
@@ -215,7 +215,7 @@ function generarFactura() {
 
        recibo.innerHTML += "<br /> Monto Retirado: $" + retiro + "<br />";
      recibo.innerHTML += "<br /> Nuevo Saldo: $" + (total-retiro) + "<br />";
-recibo.innerHTML += "<img src=reciboPie.png>" ;
+recibo.innerHTML += "<img src=https://raw.githubusercontent.com/fgmuller/CajeritoGeoBank/master/recibopie.png>" ;
 
 
 }
